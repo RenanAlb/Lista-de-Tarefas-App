@@ -21,7 +21,7 @@ const Home = () => {
   const removerTarefa = async (idTarefa) => {
     console.log(idTarefa)
     try {
-      const response = await fetch(`http://localhost:8080/deletar-tarefa/${idTarefa}`, {
+      const response = await fetch(`https://lista-de-tarefas-app-1gns.onrender.com/${idTarefa}`, {
         method: 'DELETE'
       })
 
@@ -37,7 +37,7 @@ const Home = () => {
 
   const editarTarefa = async () => {
     try {
-      const response = await fetch(`http://localhost:8080/atualizar-tarefa/${id}`, {
+      const response = await fetch(`https://lista-de-tarefas-app-1gns.onrender.com/${id}`, {
         method: 'PATCH',
         headers: {
           'Content-Type': 'application/json',
@@ -87,7 +87,7 @@ const Home = () => {
 
   const fetchTarefas = async () => {
     try {
-      const response = await fetch('http://localhost:8080/tarefas');
+      const response = await fetch('https://lista-de-tarefas-app-1gns.onrender.com/tarefas');
       if (!response.ok) {
         throw new Error('Erro ao obter tarefas');
       }
@@ -110,7 +110,7 @@ const Home = () => {
     e.preventDefault();
 
     try {
-      const response = await fetch('http://localhost:8080/home', {
+      const response = await fetch('https://lista-de-tarefas-app-1gns.onrender.com/home', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'

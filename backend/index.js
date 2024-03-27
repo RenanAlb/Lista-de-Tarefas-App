@@ -10,7 +10,7 @@ app.use(express.json())
 app.use(express.static('public'))
 
 app.use((req, res, next) => {
-  res.type('application/javascript')
+  res.type('text/javascript')
   next()
 })
 

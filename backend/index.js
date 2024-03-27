@@ -7,13 +7,6 @@ dotenv.config()
 // Configurações
 app.use(cors())
 app.use(express.json())
-app.use(express.static('public'))
-
-app.use((req, res, next) => {
-  res.type('application/javascript')
-  next()
-})
-
 // MongoDB
 const connectToDataBase = require('./src/database/connect')
 connectToDataBase()

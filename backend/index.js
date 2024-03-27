@@ -7,6 +7,7 @@ dotenv.config()
 // Configurações
 app.use(cors())
 app.use(express.json())
+
 // MongoDB
 const connectToDataBase = require('./src/database/connect')
 connectToDataBase()

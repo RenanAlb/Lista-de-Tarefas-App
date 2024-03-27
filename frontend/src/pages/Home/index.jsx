@@ -31,7 +31,7 @@ const Home = () => {
 
       window.location.reload()
     } catch(error) {
-      console.error('Erro ao conectar em http://localhost:8080/deletar-tarefa', error)
+      console.error('Erro ao conectar em https://lista-de-tarefas-app-1gns.onrender.com', error)
     }
   }
 
@@ -53,7 +53,7 @@ const Home = () => {
 
       window.location.reload()
     } catch(error) {
-      console.error('Erro ao conectar em http://localhost:8080/atualizar-tarefa :', error)
+      console.error('Erro ao conectar em https://lista-de-tarefas-app-1gns.onrender.com :', error)
     }
   }
 
